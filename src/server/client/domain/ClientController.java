@@ -64,7 +64,7 @@ public class ClientController {
     /**
      * Метод отключения от сервера инициализированное клиентом (например закрыто GUI)
      */
-    public void disconnectFromServer() {
+    public void disconnectServer() {
         serverController.disconnectUser(this);
     }
 

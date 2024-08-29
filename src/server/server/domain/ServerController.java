@@ -44,7 +44,7 @@ public class ServerController {
     public void disconnectUser(ClientController clientController){
         clientControllerList.remove(clientController);
         if (clientController != null){
-            clientController.disconnectFromServer();
+            clientController.disconnectedFromServer();
             showOnWindow(clientController.getName() + " отключился от беседы");
         }
     }

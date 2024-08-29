@@ -73,8 +73,8 @@ public class ClientGUI extends JFrame implements ClientView {
     /**
      * Метод, описывающий отключение клиента от сервера со стороны клиента
      */
-    public void disconnectFromServer(){
-        clientController.disconnectFromServer();
+    public void disconnectServer(){
+        clientController.disconnectServer();
     }
 
     /**
@@ -184,7 +184,7 @@ public class ClientGUI extends JFrame implements ClientView {
     protected void processWindowEvent(WindowEvent e) {
         super.processWindowEvent(e);
         if (e.getID() == WindowEvent.WINDOW_CLOSING){
-            disconnectFromServer();
+            disconnectServer();
         }
     }
 }
